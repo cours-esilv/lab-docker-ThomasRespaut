@@ -1,2 +1,2 @@
-docker run -p 5000:5000 -e CURRENT_ENVIRONMENT=production python3
+docker run -p 5000:5000 -e CURRENT_ENVIRONMENT=production python3 | grep -E '\-p\s+5000:5000' && grep -E '\-e\s+CURRENT_ENVIRONMENT=production'
 
